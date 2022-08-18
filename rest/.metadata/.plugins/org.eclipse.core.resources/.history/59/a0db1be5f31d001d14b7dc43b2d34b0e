@@ -1,0 +1,9 @@
+package com.barclays.service;
+
+import com.barclays.model.Employee;
+
+public interface EmployeeService {
+	Employee saveEmployee(Employee employee);
+	// get employees
+
+}

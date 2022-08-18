@@ -1,0 +1,18 @@
+package com.barclays.db;
+import java.sql.*;
+
+public class DatabaseDemo {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		
+		String url = "jdbc:mysql://localhost:3306/emp";
+		String uname = "root";
+		String pass = "password";
+		String query = "select * from employees";
+		
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		
+		
+		
+	}
+}

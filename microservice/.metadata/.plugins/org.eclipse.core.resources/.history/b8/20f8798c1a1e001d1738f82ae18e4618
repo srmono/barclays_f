@@ -1,0 +1,9 @@
+package com.barclays.VO;
+
+import com.barclays.entity.User;
+
+public class ResponseTemplate {
+
+	private User user;
+	private Department department;
+}

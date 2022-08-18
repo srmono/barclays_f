@@ -1,0 +1,19 @@
+package collections.interfaces;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class CollectionsDemo {
+	public static void main(String[] args) {
+		Collection<String> fruitCollection = new ArrayList<>();
+		
+		fruitCollection.add("Banana");
+		fruitCollection.add("Mango");
+		fruitCollection.add("Apple");
+		System.out.println(fruitCollection);
+		
+		fruitCollection.remove("Banana");
+		System.out.println(fruitCollection);
+		
+	}
+}

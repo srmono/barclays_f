@@ -1,0 +1,10 @@
+package oops;
+
+public class MyClass {
+	
+	//complete method
+	public void calc() {
+		System.err.println("calculating");
+	}
+
+}

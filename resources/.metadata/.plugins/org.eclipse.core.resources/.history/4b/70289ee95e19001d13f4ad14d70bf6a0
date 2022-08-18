@@ -1,0 +1,7 @@
+package com.barclays.phone;
+
+public class Android {
+	public void spec() {
+		System.out.println("Most powerful OS");
+	}
+}

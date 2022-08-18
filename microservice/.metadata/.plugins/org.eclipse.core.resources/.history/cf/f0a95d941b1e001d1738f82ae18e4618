@@ -1,0 +1,27 @@
+package com.barclays.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.barclays.VO.ResponseTemplate;
+import com.barclays.entity.User;
+import com.barclays.repository.UserRepository;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@Slf4j
+public class UserService {
+
+	@Autowired
+	private UserRepository userRepository;
+
+	public User saveUser(User user) {
+		log.info("save user inside user service");
+		return userRepository.save(user);
+	}
+
+	public ResponseTemplate getUserWithDepartment(Long userId) {
+		ResponseTemplate vo = new ResponseTemplate(); 
+	}
+}

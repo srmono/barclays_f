@@ -1,0 +1,27 @@
+package oops;
+
+abstract public class MyClass {
+	
+	//complete method
+	public void calc() {
+		System.err.println("calculating");
+	}
+
+	abstract public void project();
+	
+}
+
+//Abstract class can not be instantiated
+class Start {
+	public static void main(String[] args) {
+		//MyClass myClass = new MyClass();
+		
+		MyChild myChild = new MyChild();
+		
+		myChild.project();
+	}
+}
+
+
+
+

@@ -1,0 +1,5 @@
+package com.barclays.repository;
+
+public Interface EmployeeRepository {
+
+}

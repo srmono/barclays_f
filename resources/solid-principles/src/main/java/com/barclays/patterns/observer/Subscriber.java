@@ -1,0 +1,31 @@
+package com.barclays.patterns.observer;
+
+public class Subscriber {
+
+	private String name;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	private Channel channel = new Channel();
+
+	public void update() {
+		System.out.println("Hey "+ name + " New content is available");
+	}
+
+	public void subscribeChannel(Channel ch) {
+		this.channel = ch;
+	}
+	
+
+	public Subscriber(String name) {
+		super();
+		this.name = name;
+	}
+
+}

@@ -1,0 +1,34 @@
+package oops;
+
+public class Demo {
+	public static void main(String[] args) {
+		//create student object 
+		Student st1;
+		Student st2;
+		
+		st1 = new Student();
+		
+		st1.studentId = 123;
+		st1.studentName = "Venkat";
+		st1.studentCity = "Bangalore";
+		
+//		st1.study();
+//		st1.showFullDetails();
+//		
+		st2 = new Student(12, "Sanjula", "Hyderabad");
+		
+//		st2.studentId = 456;
+//		st2.studentName = "Sanjula";
+//		st2.studentCity = "Hyderabad";
+		
+		st2.study();
+		st2.showFullDetails();
+		
+		Dog d1 = new Dog();
+		
+		d1.eating();
+		
+		
+		
+	}
+}

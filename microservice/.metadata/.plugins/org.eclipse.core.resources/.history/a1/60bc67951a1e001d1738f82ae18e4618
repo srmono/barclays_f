@@ -1,0 +1,12 @@
+package com.barclays.VO;
+
+import com.barclays.entity.User;
+
+import lombok.Data;
+
+@Data
+public class ResponseTemplate {
+
+	private User user;
+	private Department department;
+}

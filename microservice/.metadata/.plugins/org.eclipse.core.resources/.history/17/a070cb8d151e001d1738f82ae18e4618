@@ -1,0 +1,11 @@
+package com.barclays.service;
+
+import org.springframework.stereotype.Service;
+
+import com.barclays.repository.DepartmentRepository;
+
+@Service
+public class DepartmentService {
+
+	private DepartmentRepository departmentRepository;
+}

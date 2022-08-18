@@ -1,0 +1,7 @@
+package com.barclays.patterns.adapt;
+
+public class School {
+	public static void main(String[] args) {
+
+	}
+}

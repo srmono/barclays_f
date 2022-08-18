@@ -1,0 +1,36 @@
+package com.barclays.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.barclays.model.Employee;
+import com.barclays.repository.EmployeeRepository;
+import com.barclays.service.EmployeeService;
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+	
+	@Autowired
+	private EmployeeRepository employeeRepository;
+
+	@Override
+	public Employee saveEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return employeeRepository.save(employee);
+	}
+
+	@Override
+	public List<Employee> getAllEmployees() {
+		// TODO Auto-generated method stub
+		return employeeRepository.findAll();
+	}
+
+	@Override
+	public Employee getEmployeeById(long id) {
+		// TODO Auto-generated method stub
+		return Employee employeeRepository.findById(id);
+	}
+
+}

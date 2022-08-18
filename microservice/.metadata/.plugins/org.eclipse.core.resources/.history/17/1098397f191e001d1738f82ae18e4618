@@ -1,0 +1,19 @@
+package com.barclays.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.barclays.entity.User;
+import com.barclays.repository.UserRepository;
+
+@Service
+public class UserService {
+
+	@Autowired
+	private UserRepository userRepository;
+
+	public User saveUser(User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

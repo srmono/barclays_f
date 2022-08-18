@@ -1,0 +1,16 @@
+package com.example;
+
+import org.junit.jupiter.api.BeforeEach;
+
+import com.example.simple.Calculator;
+
+public class CalculatorTest {
+	
+	Calculator calculator;
+	
+	@BeforeEach
+	void setUp() {
+		calculator = new Calculator();
+	}
+
+}

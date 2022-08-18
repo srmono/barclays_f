@@ -1,0 +1,14 @@
+package oops;
+
+public class Parent {
+
+	public void m1() {
+		System.out.println("I am m1() method of parent");
+	}
+}
+
+class Child extends Parent {
+	public void ms() {
+		System.out.println("I am m1() from child");
+	}
+}

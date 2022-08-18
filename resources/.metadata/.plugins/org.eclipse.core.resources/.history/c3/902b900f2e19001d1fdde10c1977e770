@@ -1,0 +1,13 @@
+package oops;
+
+public class Student {
+	//data: data members: instance variable : props
+	int studentId;
+	String studentName;
+	String studentCity;
+	
+	//Behaviour : member methods : methods (functions)
+	
+	
+
+}

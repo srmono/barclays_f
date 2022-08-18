@@ -1,0 +1,18 @@
+package collections.interfaces;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapDemo {
+	public static void main(String[] args) {
+		Map<String, Integer> numberMapping = new HashMap<>();
+		
+		//add key-value to map
+		numberMapping.put("one", 1);
+		numberMapping.put("two", 2);
+		numberMapping.put("three", 3);
+		
+		System.out.println(numberMapping.size());
+		System.out.println(numberMapping.isEmpty());
+	}
+}

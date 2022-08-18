@@ -1,0 +1,14 @@
+package corejava;
+
+public class Test {
+	public static void main(String arr[]) {
+		System.out.println("I Love Java");
+		System.out.println("Hello Java");
+		
+		int a = 56;
+		System.out.println(a);
+		
+		a = 20;
+		System.out.println(a);
+	}
+}
