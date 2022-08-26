@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSS Attack</title>
+</head>
+<body>
+    <section>
+        <form>
+            <div>
+                <label for="user-message">message</label>
+                <textarea id="user-message" name="user-message"> </textarea>
+            </div>
+            <div>
+                <label for="messageimage">Message image</label>
+                <input id="messageimage" name="messageimage" /> 
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section>
+        <ul></ul>
+    </section>
+</body>
+<script src="./script.js"></script>
+</html>

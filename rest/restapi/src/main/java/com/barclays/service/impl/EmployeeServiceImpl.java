@@ -14,7 +14,7 @@ import com.barclays.service.EmployeeService;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
-	
+
 	@Autowired
 	private EmployeeRepository employeeRepository;
 
@@ -40,13 +40,9 @@ public class EmployeeServiceImpl implements EmployeeService {
 //		}else {
 //			throw new ResourceNotFoundException("Employee", "Id", id);
 //		}
-		
-		return employeeRepository
-					.findById(id)
-					.orElseThrow(
-							() -> new ResourceNotFoundException("Employee", "Id", id)
-							);
-		
+
+		return employeeRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Employee", "Id", id));
+
 	}
 
 }
